@@ -8,7 +8,8 @@ const searchBox = new google.maps.places.SearchBox(searchElement);
 searchBox.addListener('places_changed', () => {
   // console.log('searchBox.getPlaces():', searchBox.getPlaces());
 
-  // Get the place object (it's returned in an array)
+  // Get the place object (it's returned in an array).
+  // Confusing as it doesn't get places but just the selected place!
   // getPlaces() must do a kind of request to the maps.googleapis.com API for the object
   // containing the data of the selected place.
   const place = searchBox.getPlaces()[0];
